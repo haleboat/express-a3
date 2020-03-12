@@ -1,0 +1,19 @@
+<%- include('../partials/head') %>
+
+<body>
+  <%- include('../partials/header') %>
+  <section class="gallery">
+    <% images.forEach(image => { %>
+    <figure>
+      <a href="./<%= image.id %>">
+        <img src='../images/sm/<%=image.fileName%>' alt="<%= image.title %>">
+        <figcaption>
+          <p><%= image.title %> </p>
+        </figcaption>
+      </a>
+    </figure>
+    <% }) %>
+  </section>
+
+  <%- include('../partials/footer')  %>
+</body>

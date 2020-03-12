@@ -1,0 +1,29 @@
+{
+  "name": "express-a2",
+  "version": "1.0.0",
+  "engines": {
+    "node": "^12.16.1"
+  },
+  "description": "Monday, March 9 @ 8pm",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haleboat/express-a2.git"
+  },
+  "keywords": [],
+  "author": "Alex Hale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haleboat/express-a2/issues"
+  },
+  "homepage": "https://github.com/haleboat/express-a2#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "moment": "^2.24.0"
+  }
+}

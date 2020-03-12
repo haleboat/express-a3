@@ -1,0 +1,17 @@
+<%- include('../partials/head') %>
+
+<body>
+  <%- include('../partials/header') %>
+  <section>
+    <h1> <%= image.title %> </h1>
+    <figure>
+      <img src="../images/md/<%= image.fileName %> " alt="<%= image.title %> ">
+    </figure>
+    <figcaption>
+      <p>Source: <a href="<%= image.attribution.url %>"><%=image.attribution.source %></a> </p>
+      <p>Author: <%=image.attribution.credit %> </p>
+    </figcaption>
+    <a class="button" href="../images">Go Back</a>
+  </section>
+  <%- include('../partials/footer')  %>
+</body>
