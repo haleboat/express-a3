@@ -1,4 +1,4 @@
-const gallery = [{
+module.exports = [{
     id: 237,
     title: 'Puppy',
     source: 'Lorem Picsum',
@@ -140,5 +140,3 @@ const gallery = [{
     }
   }
 ]
-
-module.exports = gallery;
