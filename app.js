@@ -48,6 +48,7 @@ app.get('/images', (req, res) => {
     if (error) {
       return console.log(error);
     }
+    //using the variable "images" to signify that .find returns "result" as all images from DB
     res.render('pages/images', {
       images: result
     });
@@ -62,8 +63,9 @@ app.get('/images/:id', (req, res) => {
     if (error) {
       return console.log(error);
     }
+    //using the variable "image" to signify that .findOne returns "result" as just 1 image from the DB
     res.render('pages/image', {
-      images: result
+      image: result
     });
   });
 });
