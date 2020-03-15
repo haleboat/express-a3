@@ -44,6 +44,7 @@ app.get('/', (req, res) => {
 
 //this is my gallery view template endpoint handler
 app.get('/images', (req, res) => {
+  //Image.find is a method from mongoose which invokes a callback function that finds ALL entries in the DB collection
   Image.find(function (error, result) {
     if (error) {
       return console.log(error);
@@ -57,6 +58,8 @@ app.get('/images', (req, res) => {
 
 //this is my endpoint handler for clicking on an image in the gallery
 app.get('/images/:id', (req, res) => {
+  //Image.findOne is a method from mongoose which invokes a callback function that finds 1 entry based off...
+  //... a parameter (in this case we're passing it the page ID) and finds the entry based off that in the DB collection
   Image.findOne({
     id: req.params.id
   }, function (error, result) {
