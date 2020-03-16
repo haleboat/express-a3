@@ -39,7 +39,7 @@ db.once('open', function () {
 
 //this is my homepage view template endpoint handler
 app.get('/', (req, res) => {
-  res.render('pages/index');
+  res.render('./pages/index');
 });
 
 //this is my gallery view template endpoint handler
@@ -50,7 +50,7 @@ app.get('/images', (req, res) => {
       return console.log(error);
     }
     //using the variable "images" to signify that .find returns "result" as all images from DB
-    res.render('pages/images', {
+    res.render('./pages/images', {
       images: result
     });
   });
@@ -67,7 +67,7 @@ app.get('/images/:id', (req, res) => {
       return console.log(error);
     }
     //using the variable "image" to signify that .findOne returns "result" as just 1 image from the DB
-    res.render('pages/image', {
+    res.render('./pages/image', {
       image: result
     });
   });
